@@ -1,4 +1,4 @@
-# Portswigger web security academy
+# Portswigger web security academy study notes
 
 The [Web Security Academy](https://portswigger.net/web-security) is a free online training center for web application security.
 
