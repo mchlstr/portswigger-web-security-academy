@@ -86,15 +86,6 @@ After submitting a new HTTP request, we can see that the page's content changed,
 ![all-tech-gifts-displayed](Assets/3.png)
 
 
-**Modified HTTP request 3**
-```
-GET /filter?category=Tech+gifts or 1=1-- HTTP/1.1
-Host: <redacted>.web-security-academy.net
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Connection: close
-```
-
 As a last step, we need to cause the application to display all the products in any category, including those we do not know about. To do this, we will introduce a Boolean logic. [Boolean-based SQL Injection](https://www.acunetix.com/websitesecurity/sql-injection2/)[^5] is technique that relies on sending an SQL query, which forces the application to return a different result depending on whether the query returns a TRUE or FALSE result.
 
 We modify our query by using the `OR` conditional statement and condition, which always will return true, such as 1=1.
