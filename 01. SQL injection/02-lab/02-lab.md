@@ -9,7 +9,7 @@ To solve the lab, perform an SQL injection attack that **logs in to the applicat
 
 Authentication bypass is when an unauthenticated user gains access equivalent to an authenticated user without ever going through an authentication procedure. This is usually the result of the usage of an unexpected access procedure that does not go through the proper validation process ([CAPEC-115: Authentication Bypass](https://capec.mitre.org/data/definitions/115.html)[^1]).
 
-One of the ways how to test authentication bypass is through the SQL injection in HTML Form Authentication (https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema.html)[^2], and that is the aim of this exercise.
+One of the ways how to test authentication bypass is through the [SQL injection in HTML Form Authentication](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema.html)[^2], and that is the aim of this exercise.
 
 The second lab provides us with a similar web application as last time.
 
@@ -17,7 +17,7 @@ The second lab provides us with a similar web application as last time.
 
 However, this time we are presented with the `My account` section instead of the search filter.
 
-After access the link, we are redirected to endpoint `HTTPS://<redacted>.web-security-academy.net/login`, presenting an HTML Login Form with two input fields `Username` and `Password`.
+After access the link, we are redirected to endpoint `HTTPS://0ab6008d04381b6bc03f3685007a004e.web-security-academy.net/login`, presenting an HTML Login Form with two input fields `Username` and `Password`.
 
 
 ![login-page](Assets/2.png)
