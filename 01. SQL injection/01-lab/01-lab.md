@@ -116,8 +116,8 @@ Content-Length: 5361
 Thank you for reading and see you in the next lab!
 
 
-[^1]: https://owasp.org/www-community/attacks/SQL_Injection)
+[^1]: https://owasp.org/www-community/attacks/SQL_Injection
 [^2]: https://portswigger.net/burp/documentation/desktop/tools/repeater/using
-[^3]: https://www.sqlinjection.net/http-errors/)
+[^3]: https://www.sqlinjection.net/http-errors/
 [^4]: https://www.risco.org.br/recursos/WhitepaperSQLInjection.pdf
 [^5]: https://www.acunetix.com/websitesecurity/sql-injection2/
