@@ -1,6 +1,9 @@
-### Introduction to SQL injection - examining the WHERE clause
+### Retrieving hidden data - examining the WHERE clause
 
 * Lab 1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+
+### Subverting application logic
+
 * Lab 2: SQL injection vulnerability allowing login bypass
 
 ### SQL injection UNION attacks
