@@ -1,0 +1,247 @@
+what is server?
+https://www.youtube.com/watch?v=UjCDWCeHCzY&t=209s
+
+
+What is Server OS?
+- Linux
+- Windows Server
+- Hypervisor - 1
+    - VMWare in datacenters i6A free but most of them are licenced
+    - ProxMods - According to Christian it is great automation
+    - TrueNAS "worry free solution", with no advanced virtualization capabilities
+
+https://www.youtube.com/watch?v=xWz_-gyv3j4
+
+How server can have more "servers" on them?
+
+Is the "Web Server", "Mail Server", "Database Server" just some applet?
+
+What is the difference between website and web application?
+--------------------------
+Authantication vulns
+---------------------------
+How password based authetication works? communicatio between web applications and servers behind.
+
+Why can bruteforce attacks happen?
+What technique can attacker deploy to increase efficience of "educated guess" in bruteforce attack?
+
+How remote IP detection works?
+
+Account locking? How it works? How to set an automation workflow.
+
+Is it possible to cause denial of service with the accout lock mechanism? how serious that would be?
+
+What is credentials stuffing?
+Where to find stolen usernames and passwords?
+
+What is Rate Limit?
+How CAPTCHA works? What are methods to avoid captcha?
+What are different forms of CAPTCHA?
+When CAPTCHA becomes annoying?
+
+How to unlock locked users?
+
+What is HTTP Basic Authentication? Is it sill used? What examples can be found about it?
+What things it is vulnerable to?
+
+Single factor authentication, what it is? Why it is still used?
+
+What is multifactor authentication?
+What are different types of multifactor authentication?
+Most common types of 2FA (two factor authentication).
+What is out-of-band physical device? Examples
+
+Why there is such diss about email based 2FA? Is it because both are password protected and there is chance that user uses the same password on multiple accounts? Therefore, if attacker optain one, then it is game over?
+
+Find and example of high-security website which required a physical device to log in. What is RSA token?
+How is dedicated device used to access the online banking? I think my bank has something like that, however, they for some reason make it easier to bruteforce now, just by putting 4 digit pin on web site, which clearly defeats the purpose of everything they done before.
+
+Is there some study of users compaining when it is "over secure" and the "institution is overexegerating risks"?
+
+SMS code transmission. How to obtain the sms code from the 2FA? I remeber guys mentioning that somebody hacked the cellphone provider just to get the sms in transit to get into the sms code to bypass the 2FA. What other methods there can be?
+What is Sim swapping and it is still a thing?
+
+What are common mis implementation of two-factor authentication?
+Broken logic and the application does not adekvately verify the same user in completing second step or that it is logged in before second step.
+
+Implementation of change of passwords, forgotten password, and keep me logged in. Why this can be troublesome?
+
+Cookie to bypass login process. What are the common patterns?
+
+Open source frameworks and documentation. Security cookies are well documented how the process works. Can you find and example of this?
+
+How to establish that it is real person/user resettin passwords?
+
+Reseting passswords using a URL. Why it is more robust system?
+
+Password reset poisoning. Fancy name, but for what it stands?
+
+Change password bruteforce? Is it possible to change password without beying logged in? Can you find examples of this flawed way of password change?
+
+-----------------------
+Directory traversal
+-----------------------
+
+Where everywhere can be a entry point for path traversal?
+I just seen a possibility to get the URL which needs to be fetched form the <img src="/loadImage?filename=218.png">
+
+What are the defences aganist the path traversal?
+
+Is sanitasion of the path traversal techniques automatically suggested by the programming frameworks, or it is just based on the developer will and knowledge to implement?
+
+Is CDN and Web Firewall enought for mitigations of this?
+
+How the Web Firewall and Akamai works. Based on signature of "payload" they block the request, or IP? What is the process?
+
+Preventions of directory traversal. How to?
+
+What is Filesystem API?
+
+------------------------------------
+Command Injection
+------------------------------------
+
+Is there some universal hosting infrastructure behing the web server?
+
+What is the common setup?
+
+What means trusting relationship between components of the infrastrucutre?
+
+Does command injection only influence "legacy systems"? What is still considered a legacy system?
+
+From example which is he bup academy the author assumes knowledge of the code behind. Is there a way how to discover this or it is just peooible thru code inspection and white hat testing?
+
+What exacly is Blind OS injection? They guy menin somehting about some commands which respnse different way they just echo, or anything that is reflected directly to the site. Are there some distribution/server specific methods for this? If yes what they are? How they are implemented?
+
+What different techniques are there to exploit the commadn injection?
+
+--------------------
+Business logic
+--------------------
+If business logic defines how the application works, how do we create a list on how the application works?
+
+Is there some training that illustrates on how the apps works?
+
+It would be fun to have a list of things for each functionality which "doesnt make sense" for that functionality.
+
+If the Business loginc flaws are unique to application, how do you approach fto find them?
+
+It said different functions can be combined in unexpectd way. What way?
+
+---------------------------
+Information Disclosure
+--------------------------
+
+What are the basics forms the application leaks the information to the attacker/user? How to differenciate if the information is really sensitive, or not?
+
+How disclosure of technical information ca be serious and sensitive?
+
+What means carefully study the webstite responses in order to leak informacion
+
+Automating the common sources or information disclosure comparing it to some SECRETS list. I think I seen the tools which are specifically for that designed.
+
+What exactly means configured to automatically list the contents of directories that does not have an index page present. How does this works?
+
+Error messages in teh applications. Informtion disclosure, way t leverage, swl injection, user enumeraton, etc. What else?
+
+What is debbuging functionality?
+
+How it represents itself on the page when it is turned on? Is it possible to reliably detect the presence of debugging turned on, or it is just guess work based on some input in some functionality, which is discovered by chance?
+
+So information disclosure is linked to the Insecure Diroct object Reference and Access Cotnrol vulnerabilities. Which one is more dangerous than and how would you report it? As IDOR and information disclosure as business flaw? As what? Priviledge esclation/latera movement/account takover if possible?
+
+What are the techniques to acieve a source code disclosure if we do not have dirrect access to the application? MEaning it is not open source, nor it is source code testing?
+
+What is TRACE HTTP Method? NEver heard about it, but look like ti can bypass some behavious
+
+What are harmless misconfiguratons which are common while integrating 3rd party software? What is most common used 3rd party software?
+
+Add searchign for /.git into the automation process and if douns just download wntire .git directory loccaly. Shit this is cool as fuck. I know you can do it with open source thing in github, but I did not know that you can do this with projects which are miscovfigured and basically get access to things.
+
+How to browse comments for information and secrets? Is there some tool for that? This sounds awesome, but like digging for dust. Prob most people covered it, but yet, still possible to find additional things even if somebody already reported existance of the folder. If it is not taken down and it contains some more gold inside, that would be the key. Instead of just having maybe it will show some of the gro of the application.
+
+Btw what are the most common languages applications are written in?
+
+--------------------------
+Access Control
+-------------------------
+
+Does access control vulns relate to logic flaws. It look that way, especially when discussing baout ht vertical and horisontal saccess control, and if it is somehow misconfigured than it. This way is as I head many times Li taking about having access to roles to try to perform what actions one user can do and if it is possible to replicate with different users which has different priviledges or access to diffferent fucntions in the code.
+
+But how to test for this? To create one or two accounts, if it is possible to create? From perspective when I cannot create an priviledge account to study things, is it possible to somehow guess it what should be possible? Just by some documentation if available?
+
+Bte what are some common functions which just admin has and nobody else should?
+
+How peinciple of least priviledge appied to applications and common misconfigurations. It is misconfiguration or it is code implementation problem?
+
+I heard this term security via obscurity many times, but I did not se much of the examples. What are the examples of security thru obscurity?
+
+What are user controllable locations? Is there some wordlist of user controlable locations of hidden fields, cookies, or parameters which indicate that it controls the access to application or different features?
+
+What is non-standard HTTP headr and how it can be used to override URL. Sounds cool as fuck.
+
+It looks like the case sensitivity is a case. URL matching in frameork specific scenarios can result into discrepancy.
+
+Horisontal priviledge escalation might be  sincple idor. Of IDOR is subcategory.
+
+What are the ways to investigate the access comtrol? I mean step b step how it is implemented?
+
+Which headers are vulnerable to acccess control and why?
+
+Is is possible to IDOR guess the ID or access to static files, how to differenciate if it is vulnerbale or not and if it is public file or not? What if it look like it is "private file", but it is publilcly available on purpose. How to differenciate between them?
+
+------------------------------
+File Upload Vulnerabilities
+------------------------------
+
+Upload function. Upload Avatar, upload file, upload pdf, upload whatever to the server to convert, store, etc. They need to read those content. Upload svg.
+
+I heard that you can embed an payload inside the svg, because it is vector graphisc. No clue how that works. Would be fun to find it.
+
+Would be cool have a folder prepared with thins for file upload vulnerabilities which are basically tesing the vlidation things like nmes, type, contents, size. And see how the server respond. It sounds like hilarious challenge and have things in one folder.
+
+What oterh things are to be checked for aside of this things mentioned? And how to do those things harmlessly? Because in BB or testing we dont want to just cause harm to user and application or application owners, but on same time, man you cannot be too gentle somethimes becasuse that might lead to just getting blocked.
+
+Combinatin of vulnerabilites. What vulnerabilities chain together? Example path traversal to upload to any location.
+
+Parsing. How many different types of parcing there is? IT is OS specific? Language specific? Framework specific?
+
+BEhaviour of files based on ectensions, file types, MIME and server configurations. This means that different servers cts differently and can be configured diffeently.
+
+Chaining file upload and remote command execution.
+
+What peculiar things can me in multipart/form-data?
+
+List of alternative extensions for any file type which can be substitute to be executed. Same workd with obfuscation, capitalication, cammelcase, URL endoding, doble extensions and others. What else is there? What ar the language specifc obfuscation methods? How different languages and frameworks parse this?
+
+What is race condition and how you spot one?
+
+Using different methonds on the server asite of POST OR GET, such as PUT
+
+-----------------------
+Race Conditions
+----------------------
+
+What is network jitter?
+
+What are the differences betwewn HTTP 1 and HTTP 2? Which is used more now? Do they have the same vulnerabilities? It is possible to use both of them in the same
+
+What is server-side jitter?
+
+How to evaluaye if the nd point is critical?
+How to establish if there is a possibility for collision?
+
+How network architecture influence the appilication?
+What is network architecture?
+How it look lke?
+
+What the heck is connection warming? It sounds like as if the athlete is warming his limbs before run, or hockey payers try to get some goals before actual game, so they are already warmed up and the muscless are not stiff. Does the network work the same way?
+
+
+Passing arrays and nonstring values in non standard syntax to framworks and languagues. How does this work and why it is important?
+
+---------------------
+SSRF
+--------------------
+
+I find it interestingthat it ispossible to force server to make a request for you. Why server even makes this request?

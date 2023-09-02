@@ -1,0 +1,30 @@
+sequenceDiagram
+    participant User
+    participant Client
+    participant Server
+    participant Database
+
+    User->>Client: Provide unique identifier
+    Client->>Server: Send identifier (email, username, etc.)
+    Server->>Client: Prompt to create password
+
+    User->>Client: Create password
+    Client->>Server: Send encrypted password
+    Server->>Database: Store encrypted credentials
+
+
+    User->>Client: Provide credentials
+    Client->>Server: Send credentials
+    Server->>Database: Retrieve stored credentials
+    Server->>Server: Compare credentials
+
+
+    Server-->>Client: Access granted
+    alt Credentials Do Not Match
+        Server-->>Client: Access denied
+        Server->>Client: Prompt to reenter or reset password
+        User->>Client: Reenter information / Reset password
+        Client->>Server: Send updated credentials
+        Server->>Database: Store updated credentials
+        Server-->>Client: Access granted
+    end
