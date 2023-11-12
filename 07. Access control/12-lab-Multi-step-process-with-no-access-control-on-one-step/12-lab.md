@@ -8,6 +8,8 @@ To solve the lab, log in using the credentials `wiener:peter` and exploit the fl
 
 Note: This is just to demonstrate the fact that multi-step process, can be flawed and app assume that if you can do last steps, you automatically had to do step 1.
 
+Note2: If you do not have access to the administrative account, try to find out what framework they use for such tasks. If it is Open Source or Trial version accessible, install it and examine the flow. 
+
 1. Log in as administrator and explore the multi-step process.
 
 ![Step one](upgrade-step1.png)
