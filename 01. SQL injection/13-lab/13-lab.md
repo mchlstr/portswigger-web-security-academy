@@ -1,5 +1,6 @@
-# Lab Description
-## Lab: Blind SQL injection with time delays
+# Lab: Blind SQL injection with time delays
+
+## Lab Description
 
 This lab contains a blind SQL injection vulnerability. The application uses a tracking cookie for analytics, and performs an SQL query containing the value of the submitted cookie.
 
@@ -7,4 +8,4 @@ The results of the SQL query are not returned, and the application does not resp
 
 To solve the lab, exploit the SQL injection vulnerability to cause a 10 second delay.
 
-# Lab Solution
+## Lab Solution

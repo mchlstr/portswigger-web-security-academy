@@ -1,4 +1,4 @@
-# Authentication bypass via information disclosure
+# Lab: Authentication bypass via information disclosure
 ## Lab Description
 
 This lab's **administration interface** has an authentication bypass vulnerability, but it is impractical to exploit without knowledge of a custom HTTP header used by the front-end.

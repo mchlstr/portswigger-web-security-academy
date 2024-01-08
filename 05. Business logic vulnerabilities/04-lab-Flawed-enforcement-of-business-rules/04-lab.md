@@ -1,4 +1,4 @@
-# Flawed enforcement of business rules
+# Lab: Flawed enforcement of business rules
 
 ## Lab Description
 
@@ -23,7 +23,7 @@ Use coupon SIGNUP30 at checkout!
 If we tried to apply the same coupon, we will get the error that `coupon already applied`.
 ![](05-coupon-already-applied.png)
 
-However, if we apply them alternating, first the `NEWCUTS5` coupon, then `SIGNUP30` and then again the `NEWCUTS5` coupon, then `SIGNUP30` and over and over, we can zero the price. 
+However, if we apply them alternating, first the `NEWCUTS5` coupon, then `SIGNUP30` and then again the `NEWCUTS5` coupon, then `SIGNUP30` and over and over, we can zero the price.
 ![](06-coupons-added.png)
 
 ![](07-bought-for-0.png)

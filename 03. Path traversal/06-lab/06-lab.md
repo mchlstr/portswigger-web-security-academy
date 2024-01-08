@@ -1,3 +1,5 @@
-# Lab Description
+# Lab: File path traversal, validation of file extension with null byte bypass
 
-# Lab Solution
+## Lab Description
+
+## Lab Solution

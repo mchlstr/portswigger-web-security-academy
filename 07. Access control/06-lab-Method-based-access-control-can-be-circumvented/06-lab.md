@@ -1,10 +1,12 @@
-# Lab Description
+# Lab: Method-based access control can be circumvented
+
+## Lab Description
 
 This lab implements access controls based partly on the `HTTP method` of `requests`. You can familiarize yourself with the admin panel by logging in using the credentials `administrator:admin`.
 
 To solve the lab, log in using the credentials `wiener:peter` and exploit the flawed access controls to **promote yourself to become an administrator**.
 
-# Lab Solution
+## Lab Solution
 
 1. Log in using the admin credentials.
 2. Browse to the admin panel, promote `carlos`, and send the HTTP request to Burp Repeater.

@@ -1,4 +1,6 @@
-# Lab Description
+# Lab: User ID controlled by request parameter with data leakage in redirect
+
+## Lab Description
 
 This lab contains an access control vulnerability where **sensitive information** is leaked in the body of a **redirect response**.
 
@@ -6,7 +8,7 @@ To solve the lab, obtain the `API key` for the user `carlos` and submit it as th
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
-# Lab Solution
+## Lab Solution
 
 1. Log in using the `wiener:peter` credentials and access the account page. Again can be observed that parameter `id` is assigned an username as value `id=wiener`
 

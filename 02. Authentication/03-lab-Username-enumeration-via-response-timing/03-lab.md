@@ -1,6 +1,14 @@
-# Lab Description
+# Lab: Username enumeration via response timing
 
-# Lab Solution
+## Lab Description
+
+This lab is vulnerable to username **enumeration using its response times**. To solve the lab, **enumerate a valid username, brute-force this user's password, then access their account page**.
+
+- Your credentials: wiener:peter
+- Candidate usernames
+- Candidate passwords
+
+## Lab Solution
 
 Depending on the implementation, the processing time can be significantly different according to the case (success vs failure) allowing an attacker to mount a time-based attack (delta of some seconds for example). (https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html#protect-against-automated-attacks)
 

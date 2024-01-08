@@ -1,4 +1,4 @@
-# Inconsistent security controls
+# Lab: Inconsistent security controls
 ## Lab Description
 
 This lab's **flawed logic allows arbitrary users to access administrative functionality** that should only be available to company employees. To solve the lab, **access the admin panel and delete the user `carlos`**.

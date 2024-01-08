@@ -1,4 +1,6 @@
-# Lab Description
+# Lab: User ID controlled by request parameter, with unpredictable user IDs
+
+## Lab Description
 
 This lab has a horizontal privilege escalation vulnerability on the user account page, but identifies users with `GUIDs`.
 
@@ -6,7 +8,7 @@ To solve the lab, find the `GUID` for `carlos`, then submit his `API key` as the
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
-# Lab Solution
+## Lab Solution
 
 1. Log in `wiener` account and observe the form of the `id` parameter `id=94b0c6b3-c5a6-40bf-b711-641d2b359323`
 ![Wiener Profile](wiener-profile.png)

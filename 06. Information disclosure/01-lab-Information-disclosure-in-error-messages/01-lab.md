@@ -1,4 +1,4 @@
-# Information-disclosure-in-error-messages
+# Lab: Information-disclosure-in-error-messages
 
 ## Lab Description
 

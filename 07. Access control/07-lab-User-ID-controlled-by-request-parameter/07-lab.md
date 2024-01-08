@@ -1,4 +1,6 @@
-# Lab Description
+# Lab: User ID controlled by request parameter
+
+## Lab Description
 
 This lab has a **horizontal privilege escalation** vulnerability on the user account page.
 
@@ -6,7 +8,7 @@ To solve the lab, obtain the `API key` for the user `carlos` and submit it as th
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
-# Lab Solution
+## Lab Solution
 
 **Horizontal privilege escalation** involves gaining access to the rights of another account—human or machine—with **similar privileges**.
 

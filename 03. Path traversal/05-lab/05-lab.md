@@ -1,3 +1,5 @@
-# Lab Description
+# Lab: File path traversal, validation of start of path
 
-# Lab Solution
+## Lab Description
+
+## Lab Solution

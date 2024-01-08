@@ -1,10 +1,12 @@
-# Lab Description
+# Lab: URL-based access control can be circumvented
+
+## Lab Description
 
 This website has an unauthenticated admin panel at `/admin`, but a **front-end system has been configured to block external access to that path**. However, the back-end application is built on a framework that supports the `X-Original-URL` header.
 
 To solve the lab, access the admin panel and delete the user `carlos`.
 
-# Lab Solution
+## Lab Solution
 
 1. Try to load `/admin` and observe that you get blocked. Notice that the response is very plain, suggesting it may originate from a front-end system.
 2. Send the request to Burp Repeater. Change the URL in the request line to `/` and add the HTTP header `X-Original-URL: /invalid`. Observe that the application returns a `"not found"` response. This indicates that the back-end system is processing the URL from the `X-Original-URL` header.

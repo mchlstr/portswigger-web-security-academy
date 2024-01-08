@@ -1,10 +1,13 @@
-# Lab Description
+# Lab: Username enumeration via account lock
 
-## Lab: Username enumeration via account lock
+## Lab Description
 
-This lab is vulnerable to username enumeration. It uses account locking, but this contains a logic flaw. To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
+This lab is vulnerable to **username enumeration**. It uses **account locking**, but this **contains a logic flaw**. To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
 
-# Lab Solution
+- Candidate usernames
+- Candidate passwords
+
+## Lab Solution
 
 
 HTTP Request in the intruder with the username as a payload

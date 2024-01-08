@@ -1,4 +1,4 @@
-# Information disclosure in version control history
+# Lab: Information disclosure in version control history
 ## Lab Description
 
 This lab discloses **sensitive information via its version control history**. To solve the lab, **obtain the password for the `administrator` user then log in and delete the user `carlos`.**

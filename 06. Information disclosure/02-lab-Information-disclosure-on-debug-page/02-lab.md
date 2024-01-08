@@ -1,4 +1,4 @@
-# Information disclosure on debug page
+# Lab: Information disclosure on debug page
 
 ## Lab Description
 

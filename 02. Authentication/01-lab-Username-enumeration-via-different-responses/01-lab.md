@@ -1,5 +1,6 @@
-# Lab Description
-## Lab: Username enumeration via different responses
+# Lab: Username enumeration via different responses
+
+##  Lab Description
 
 This lab is vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password, which can be found in the following wordlists:
 
@@ -8,7 +9,7 @@ This lab is vulnerable to username enumeration and password brute-force attacks.
 
 To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
 
-# Lab Solution
+## Lab Solution
 
 Note: Every time the lab starts a random user-password is picked as correct combination.
 

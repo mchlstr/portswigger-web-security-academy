@@ -1,10 +1,12 @@
-# Lab Description
+# Lab: Referer-based access control
+
+## Lab Description
 
 This lab controls access to certain admin functionality based on the `Referer header`. You can familiarize yourself with the admin panel by logging in using the credentials `administrator:admin`.
 
 To solve the lab, log in using the credentials `wiener:peter` and **exploit the flawed access controls to promote yourself to become an administrator**.
 
-# Lab Solution
+## Lab Solution
 
 Note: **Referrer-based access control** is a vulnerability found in web applications that use the HTTP `Referer` header for enforcing access control to sensitive data or functionality. Referrer-based access control is a **weak scheme** for access control that can easily be exploited to enable unauthorized access. Source: https://cs.brown.edu/courses/csci1660/wiki/attacks/Referrer-Based-Access-Control/
 

@@ -1,12 +1,12 @@
-# Lab Description
+# Lab: Broken brute-force protection, multiple credentials per request
 
-## Lab: Broken brute-force protection, multiple credentials per request
+## Lab Description
 
 This lab is vulnerable due to a logic flaw in its brute-force protection. To solve the lab, brute-force Carlos's password, then access his account page.
 
 Victim's username: carlos
 
-# Lab Solution
+## Lab Solution
 
 **HTTP Request**
 

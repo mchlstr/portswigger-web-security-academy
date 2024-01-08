@@ -1,11 +1,13 @@
-# Lab Description
+# Lab: User role controlled by request parameter
+
+## Lab Description
 This lab has an admin panel at `/admin`, which identifies administrators using a **forgeable** cookie.
 
 Solve the lab by accessing the admin panel and using it to delete the user `carlos`.
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
-# Lab Solution
+## Lab Solution
 
 For this lab to be solved is absolutely necessary to have an account on the application, because the forgeable cookie is assigned upon login.
 

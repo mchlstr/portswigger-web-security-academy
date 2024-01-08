@@ -1,17 +1,16 @@
-# Lab Description
+# Lab: File path traversal, simple case
+
+## Lab Description
 This lab contains a **path traversal vulnerability in the display of product images**.
 
 To solve the lab, retrieve the contents of the `/etc/passwd` file.
 
-# Lab Solution
+## Lab Solution
 
 We open the page in `dev mode` and see there are 3 types of relative URL paths in the code:
 - First type pointing directly to the resource
 - Second type with query parameter `filename`
 - Third type with query parameter `productID`
-
-
-
 
 Note: If you copy the command as curl
 

@@ -1,3 +1,3 @@
-# Lab Description
+## Lab Description
 
-# Lab Solution
+## Lab Solution
