@@ -350,3 +350,4 @@ java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 266
 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Deleting temporary files - please wait ... done.
